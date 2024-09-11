@@ -98,7 +98,7 @@ const TimeZoneConverter = () => {
       <div className="bg-green-700 py-4 px-6 rounded-t-lg">
         <h2 className="text-xl font-semibold text-white">Time Zone Converter</h2>
       </div>
-      <div className="space-y-5 p-6 border border-green-200 rounded-b-lg">
+      <div className="space-y-5 p-6 border border-gray-200 rounded-b-lg">
         <div className="space-y-2">
           <label htmlFor="datetime-input" className="text-sm font-medium text-green-800">
             Your time and date:
@@ -108,13 +108,13 @@ const TimeZoneConverter = () => {
             type="datetime-local"
             value={inputDateTime}
             onChange={(e) => setInputDateTime(e.target.value)}
-            className="w-full p-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
           />
         </div>
         <select
           value={selectedTimeZone}
           onChange={(e) => setSelectedTimeZone(e.target.value)}
-          className="w-full p-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
         >
           <option value="">Select time zone</option>
           {timeZones.map((tz) => (
@@ -130,7 +130,7 @@ const TimeZoneConverter = () => {
           Convert
         </button>
         {convertedDateTime && (
-          <div className="mt-4 p-3 bg-green-50 rounded-md border border-green-200">
+          <div className="mt-4 p-3 bg-green-50 rounded-md border border-gray-200">
             <p className="text-lg font-medium text-green-800">{convertedDateTime}</p>
           </div>
         )}
