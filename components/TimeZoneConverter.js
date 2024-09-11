@@ -125,7 +125,7 @@ const TimeZoneConverter = () => {
         </select>
         <button 
           onClick={handleConvert} 
-          className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300"
+          className="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300"
         >
           Convert
         </button>
